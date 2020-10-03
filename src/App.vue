@@ -1,24 +1,24 @@
 <template>
   <div id="app">
-    {{ message }}
+    <pokeguia></pokeguia>
   </div>
 </template>
 
 <script>
+import PokeGuiaComponent from "./components/Pokeguia.vue";
+
   export default {
     data() {
       return {
         message: 'Hola en vue',
       };
+    },
+    components:{
+      "pokeguia": PokeGuiaComponent,
     }
   }
 </script>
 
 <style scoped>
-  #app {
-    font-size: 25px;
-    font-family: "Calibri", sans-serif;
-    color: darkblue;
-    background: lightblue;
-  }
+  
 </style>
