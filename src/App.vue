@@ -1,24 +1,26 @@
 <template>
   <div id="app">
+    <navbar></navbar>
     <pokeguia></pokeguia>
   </div>
 </template>
 
 <script>
 import PokeGuiaComponent from "./components/Pokeguia.vue";
+import NavBarComponent from "./components/Navbar.vue";
 
   export default {
     data() {
       return {
-        message: 'Hola en vue',
+        //
       };
     },
     components:{
       "pokeguia": PokeGuiaComponent,
+      "navbar": NavBarComponent,
     }
   }
 </script>
+<style>
 
-<style scoped>
-  
 </style>
