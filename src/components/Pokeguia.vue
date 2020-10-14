@@ -3,17 +3,17 @@
     <div class=" d-flex justify-content-center ">
       <div class="card text-center mt-5">
         <h1 class=" mt-4">{{ tittle }}</h1>
-        <label>Nombre</label>
         <input
           id="personaje"
           type="text"
           class="form-control text-center"
           v-model="personaje.nombre"
+          placeholder="Ingresa el nombre de un pokémon"
           @keyup.enter="fetchPersonaje"
         /><br />
         <button
           type="button"
-          class="btn btn-danger"
+          class="btn bg-pink"
           @click.prevent="fetchPersonaje" 
         >
           Buscar
@@ -102,9 +102,26 @@ li{
   list-style: none;
 }
 .card{
-
   border: 0;
+  width: 250px;
+  background: lightgoldenrodyellow;
+  padding: 1em;
+  border-radius: 5%
+
 }
-
-
+h1{
+  color: lightpink;
+  font-family: cursive;
+  font-weight: 600;
+   -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+input{
+  font-size: 12px;
+}
+.bg-pink{
+  background-color: lightpink;
+  color:indianred;
+ 
+}
 </style>

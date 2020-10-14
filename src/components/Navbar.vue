@@ -13,14 +13,11 @@ export default {
     data: function(){
         return {}
     },
-    // computed: {},
-    methods: {
-        // -- Metodos
-    },
-    // components: {},
 }
 </script>
 
 <style scoped>
-    
+    nav{
+        background-color:indianred
+    }
 </style>

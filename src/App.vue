@@ -22,5 +22,8 @@ import NavBarComponent from "./components/Navbar.vue";
   }
 </script>
 <style>
-
+  #app{
+    background-image: url("/src/img/background.jpg");
+    font-family: cursive;
+  }
 </style>
